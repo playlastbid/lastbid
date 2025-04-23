@@ -1,4 +1,4 @@
-🧠 #Solana Last Bid Program
+🧠 Solana Last Bid Program
 
 A decentralized game-like smart contract on Solana where players buy "keys" using $BID tokens to extend a countdown timer. The last player to buy before the timer ends wins the main prize. Features include referral bonuses, revenue sharing for key holders, and flexible game rounds.
 
@@ -15,7 +15,8 @@ Multi-round gameplay with cooldown between rounds.
 
 Ownership & admin functions to initialize and manage games.
 
-📂 #Program Structure
+📂 Program Structure
+
 📌 Constants
 Defines game parameters like:
 
@@ -27,7 +28,8 @@ Fee distribution percentages (buy, referral, treasury)
 
 Game mechanics (token amounts, max timer, etc.)
 
-🛠 #Functions
+🛠 Functions
+
 🔑 Ownership Management
 initialize_ownership
 Initializes the ownership account. Can only be done once.
@@ -45,9 +47,6 @@ Closes the key holder account. Admin-only.
 🎮 Game Lifecycle
 initialize_game(bid_token_mint, treasury_wallet)
 Starts a new game round. Valid only after a REST_TIME period from the last game. Transfers the initial prize pool and resets game parameters.
-
-close_game
-Administrative function to end an ongoing game. Does not distribute prizes.
 
 🛒 Key Purchase Mechanics
 buy_keys(group_number, suggested_amount, number_of_keys)
@@ -68,7 +67,7 @@ Same as buy_keys, but includes referral bonus logic. Validates the referral code
 create_referral_account(ref_code)
 Sets up a referral account for the user. Must be unique and can only be created once per user.
 
-🏆 #Prize & Rewards Distribution
+🏆 Prize & Rewards Distribution
 release_main_prize
 Distributes the main prize pool:
 
