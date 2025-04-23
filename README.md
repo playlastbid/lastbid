@@ -123,9 +123,8 @@ Key interactions use SPL Token and System Program CPI securely.
 Requires BID token burning and fee transfers for purchases.
 
 🧪 Deployment Notes
+
 Built using Anchor framework.
 
-Constants should be fine-tuned for real deployment.
-
-Integrate with frontend for referral tracking, group display, and game countdown.
+Integrated with frontend for referral tracking, group display, and game countdown.
 
